@@ -5,4 +5,6 @@ using Test
 using puMPS
 using puMPS.MPS
 
-include("mps.jl")
+@testset "puMPS.jl" begin
+    include("mps.jl")
+end
