@@ -342,7 +342,7 @@ function tm_eigs_dense(A::MPSTensor{T}, B::MPSTensor{T}) where {T}
     
     TM = reshape(TM, (DA*DB,DA*DB))
     # TM_H = 0.5*(TM + TM')
-    ev, eVr = eigen(Hermitian(TM);sortby=real)
+    ev, eVr = eigen(TM;sortby=real)
     eVl = inv(eVr)'
     
     eVmr = Matrix[reshape(eVr[:,j], (DA,DB)) for j in 1:size(eVr, 2)]
