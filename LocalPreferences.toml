@@ -1,0 +1,4 @@
+[MPSKit]
+parallelize_derivatives = true
+parallelize_sites = false
+parallelize_transfers = true
