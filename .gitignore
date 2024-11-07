@@ -1,6 +1,8 @@
 *.jl.cov
 *.jl.*.cov
 *.jl.mem
+**/*.jld2
+**/*.hdf5
 deps/deps.jl
 Manifest.toml
 .vscode/
